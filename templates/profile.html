@@ -1,0 +1,11 @@
+<!doctype html>
+<html>
+<head><title>Profile - MiniVulnLab</title></head>
+<body style="font-family: sans-serif; max-width: 600px; margin: 60px auto;">
+  <h1>Profile: {{ profile['username'] }}</h1>
+  <p>Logged in as: {{ me }}</p>
+  <p>User ID: {{ profile['id'] }}</p>
+  <p>Bio: {{ profile['bio'] }}</p>
+  <p><a href="/diagnostics">Network diagnostics tool</a> | <a href="/logout">Log out</a></p>
+</body>
+</html>

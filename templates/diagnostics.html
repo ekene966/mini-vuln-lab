@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+<head><title>Diagnostics - MiniVulnLab</title></head>
+<body style="font-family: sans-serif; max-width: 600px; margin: 60px auto;">
+  <h1>Network Diagnostics</h1>
+  <form method="post">
+    <label>Host to ping: <input type="text" name="host" placeholder="127.0.0.1"></label>
+    <button type="submit">Ping</button>
+  </form>
+  {% if output %}
+  <pre style="background: #eee; padding: 10px;">{{ output }}</pre>
+  {% endif %}
+  <p><a href="/profile">Back to profile</a></p>
+</body>
+</html>
